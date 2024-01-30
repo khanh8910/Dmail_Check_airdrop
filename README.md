@@ -1,5 +1,5 @@
 # Dmail_Check_airdrop
-Check airdrop Dmail
+Check multiple addresses for the Dmail airdrop.
 ```
 pip install web3
 ```
