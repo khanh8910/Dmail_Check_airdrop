@@ -47,8 +47,7 @@ contract = web3.eth.contract(address=Web3.to_checksum_address(contract_address),
 def get_claimable_tokens(wallet):
     try:
         result = contract.functions.claimableTokens(web3.to_checksum_address(wallet)).call()
-        if result != 0:
-            print(f"{wallet}: {result/10**18}")
+        print(f"{wallet}: {result/10**18}")
     except Exception as e:
         print("Error calling claimableTokens:", e)
 
